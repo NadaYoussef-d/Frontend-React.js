@@ -1,0 +1,87 @@
+h1 {
+    color: aquamarine;
+    /* border-width: 9px; */
+    /* border-style: double; */
+    padding: 20px;
+    margin: 30px;
+    width: 50%;
+    height: 100px;
+    box-sizing: content-box;
+}
+h1, h2 , h3 {
+    background-color: wheat;
+    color: steelblue;
+}
+
+#content {
+    color: yellowgreen;
+    background-color: tomato;
+}
+body {
+    background-color: #e2d4e2;
+}
+.childOfchild{
+    height: 400px;
+    width: 400px;
+    background-color: darkgoldenrod;
+
+}
+ .child1 {
+height: 50px;
+    width: 300px;
+    background-color: brown;
+    visibility: hidden;
+}
+.child2 {
+    height: 500px;
+        width: 300px;
+        background-color: rgb(42, 165, 63);
+    }
+    .base{
+        height: 600px;
+        width: 600px;
+        background-color: darkkhaki;
+        visibility:collapse;
+    }
+div {
+    width: 150px;
+    height: 100px;
+    border: 1px dashed blue;
+    background-color: cyan;
+}
+div .childOfchild {
+    width: 200px;
+}
+div ~ .child1 {
+    background-color: darkslategrey;
+}
+[width ^= "89px"]
+{
+    background-color: rgb(187, 172, 161);
+}
+[child1 |= "a"]
+{
+    background-color: rgb(237, 100, 230);
+}
+li[class^="a"] {
+    background-color: yellow;
+}
+
+li[class^="a" i] {
+    color: red;
+}
+.sibling1 {
+    display: block;
+    margin: 50px auto;
+    background-color: darkblue;
+}
+.y {
+    width: 50px;
+    margin: auto;
+    height: 30px;
+}
+.sibling2{
+    display: inline-block;
+}
+
+  
