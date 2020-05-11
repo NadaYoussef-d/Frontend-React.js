@@ -28,8 +28,8 @@ class App extends Component {
           <Route path="/addProduct" component={AddPrd} />
           <Route path="/not-found" component={NotFound} />
           <Route path="/productDetails" component={PrdDetails} />
-          <Redirect from="/home" to="/prdListing" />
           <Redirect from="/" exact to="/login" />
+          {/* <Redirect from="/home" exact to="/prdListing" /> */}
           <Redirect to="/not-found" />
         </Switch>
       </React.Fragment>

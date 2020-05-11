@@ -16,19 +16,17 @@ class Login extends Component {
     console.log(this.state.user);
   };
   handleLogin = async e => {
-    debugger;
-    console.log(e);
     e.preventDefault();
     const result = await LoginUser(this.state.user);
+    console.log(result);
     const token = result.data.token;
     window.localStorage.setItem("userToken", token);
-    // const cat = window.localStorage.getItem("userToken");
-    // console.log(cat);
-    if (result) {
+
+    if (result.status === 200) {
       this.props.history.push("/prdListing");
-      console.log(result);
-      //const token = res.token
-      //localStorage.setItem("token", token)
+    } else {
+      this.props.history.push("/register");
+      alert("If you are not a user, please register!");
     }
   };
   render() {
