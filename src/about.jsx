@@ -5,6 +5,7 @@ import AboutPrd from "./aboutPrd";
 import AboutUsers from "./aboutUsers";
 
 const About = props => {
+  console.log("hello from github");
   return (
     <div>
       <h1>About {props.name}</h1>
